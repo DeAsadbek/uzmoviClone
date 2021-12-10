@@ -3,7 +3,21 @@
 $('.owl-random.owl-carousel').owlCarousel({
     items: 1,
     nav: false,
-    margin: 10
+    margin: 0,
+    responsive: {
+        1200:{
+            items: 4
+        },
+        992: {
+            items: 3
+        },
+        768: {
+            items: 3
+        },
+        546:{
+            items: 2
+        }
+    }
 });
 
 $(document).ready(function () {

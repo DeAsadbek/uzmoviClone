@@ -46,15 +46,98 @@ body {
     overflow-x: hidden;
 }
 
+@media (min-width: 1200) {
+    .right-bar {
+        width: 25% !important;
+    }
+}
+
 @media (min-width: 992px) {
     .owl-box.row {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .owl-box.row .col-md-9 {
-        width: 75%;
+    /* .owl-box.row .col-md-9 {
+        width: 100%;
+    } */
+
+    .owl-random.owl-carousel {
+        max-width: 936px !important;
+        width: 100% !important;
     }
+
+    .right-bar .owl-carousel .owl-item {
+        width: 100%;
+    }
+
+    .right-bar .owl-item .owl-stage {
+        height: 395px;
+        width: 100%;
+    }
+
+    .owl-random.owl-carousel .owl-stage-outer {
+        width: 100% !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .right-bar {
+        width: 100%;
+    }
+
+    .owl-box.row .col-md-9 {
+        width: 100%;
+    }
+
+    .owl-random.owl-carousel {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .right-bar .owl-carousel .owl-item {
+        width: 100%;
+    }
+
+    .right-bar .owl-item .owl-stage {
+        height: 395px;
+        width: 100%;
+    }
+
+    .owl-random.owl-carousel .owl-stage-outer {
+        width: 100% !important;
+    }
+
+}
+
+@media (min-width: 546px) {
+    .right-bar {
+        width: 100%;
+    }
+
+    .owl-box.row .col-md-9 {
+        width: 100%;
+    }
+
+    .owl-random.owl-carousel {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .right-bar .owl-carousel .owl-item {
+        width: 100%;
+    }
+
+    .right-bar .owl-item .owl-stage {
+        height: 395px;
+        width: 100%;
+    }
+
+    .owl-random.owl-carousel .owl-stage-outer {
+        width: 100% !important;
+    }
+
 }
 
 
@@ -170,6 +253,10 @@ body {
     .navbar-expand-lg .navbar-nav .dropdown-menu.drop3 li {
         width: 19%;
     }
+}
+
+.owl-random .owl-stage-outer {
+    height: 395px;
 }
 
 .navbar .tree {
@@ -627,7 +714,7 @@ Home page Css
     border-left-color: var(--bs-teal);
 }
 
-.owl-box .item {
+.owl-box .slides.owl-blue .item {
     width: 223px;
 }
 
@@ -910,13 +997,15 @@ Home page Css
     overflow: hidden;
     max-width: 100%;
     width: 237.5px;
-    height: 402.14px;
+    height: 371.14px;
 }
 
-.right-bar .owl-random.owl-carousel .owl-item,
-.right-bar .owl-random.owl-carousel .owl-item .item {
+.bg {
+    padding: 3rem 0;
+}
+
+.right-bar .owl-random.owl-carousel .owl-item {
     max-width: 100%;
-    width: 237.5px !important;
     overflow: hidden;
     background: #526480;
 }
@@ -1454,13 +1543,13 @@ footer ul li a:hover {
     margin-top: 20px;
 }
 
-footer .copyRight  {
+footer .copyRight {
     background: #131A20;
     padding: 15px 0;
     margin-top: 0px;
 }
 
-footer .copyRight  a {
+footer .copyRight a {
     color: #a5bbdc;
 }
 
