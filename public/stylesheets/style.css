@@ -517,7 +517,6 @@ Home page Css
 }
 
 .owl-carousel .item {
-    width: 1296px;
     height: 693.42px;
     position: relative;
 }
@@ -618,6 +617,12 @@ Home page Css
     border-left-color: #fd7e14;
 }
 
+.h-owl {
+    border-left-color: #fd7e14;
+    padding-left: 8px;
+    border-left: 8px solid #fd7e14;
+}
+
 .pageThree {
     border-left-color: var(--bs-teal);
 }
@@ -639,7 +644,9 @@ Home page Css
     overflow: hidden;
 }
 
-.owl-box .owl-carousel .owl-stage-outer {
+.owl-box .slides.owl-blue .owl-carousel .owl-stage-outer,
+.owl-box .slides.owl-green .owl-carousel .owl-stage-outer,
+.owl-box .slides.owl-orange .owl-carousel .owl-stage-outer {
     height: 370px !important;
 }
 
@@ -735,7 +742,9 @@ Home page Css
     height: 395px;
 }
 
-.owl-box .owl-carousel .owl-item {
+.owl-box .slides.owl-blue .owl-carousel .owl-item,
+.owl-box .slides.owl-green .owl-carousel .owl-item,
+.owl-box .slides.owl-orange .owl-carousel .owl-item {
     width: 230px !important;
 }
 
@@ -1084,9 +1093,18 @@ Home page Css
 #collapseTwo .btn-treyler,
 #collapseThree .btn-treyler,
 #collapseOne .btn-treyler {
-    margin-top: 15px;
+    padding: 12px 0;
     color: #a5bbdc;
     font-size: 12px;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+}
+
+#collapseTwo .btn-treyler:hover,
+#collapseThree .btn-treyler:hover,
+#collapseOne .btn-treyler:hover {
+    background: #526480;
+    border: 1px solid #304156;
 }
 
 .right-bar .collapse {
@@ -1256,7 +1274,7 @@ p.story-list-text a:hover {
     color: white
 }
 
-.story-list-img:hover::after {
+.accordion-body:hover .story-list-img::after {
     display: block;
 }
 
@@ -1275,6 +1293,177 @@ p.story-list-text a:hover {
     color: white;
 }
 
+.owl-treyler-clone .owl-item {
+    width: 100% !important;
+}
+
+
+.owl-treyler-clone .owl-item .item,
+.owl-treyler-clone .owl-item .item .owl-images,
+.owl-treyler-clone .owl-item {
+    width: 100% !important;
+}
+
+.owl-treyler-clone .owl-carousel {
+    height: 365px !important;
+}
+
+.owl-treyler-clone .owl-carousel .owl-item {
+    width: 471px !important;
+    overflow: hidden;
+}
+
+.owl-treyler-clone .owl-carousel .owl-item .item {
+    height: 100% !important;
+}
+
+.owl-treyler-clone .short-images-link {
+    width: 100%;
+}
+
+.owl-treyler-clone .short-images-link a img {
+    width: 100%;
+    height: 90%;
+}
+
+.owl-treyler-clone .owl-carousel .owl-item .item .short-content h4 {
+    background: #222933;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.owl-treyler-clone .owl-carousel .owl-item .item h4 a {
+    color: #a5bbdc;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.owl-treyler-clone .owl-carousel .owl-item {
+    height: 100% !important;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row.height .col-sm-6,
+.row.height .col-sm-6 .owl-yellow {
+    height: 100%;
+}
+
+.row.height .col-sm-6 .owl-yellow a img {
+    width: 110px;
+    height: 70px;
+}
+
+ul.short-news.d-flex.flex-column {
+    padding: 0 !important;
+}
+
+ul.short-news.d-flex.flex-column li {
+    padding-bottom: 10px;
+}
+
+ul.short-news.d-flex.flex-column a:hover {
+    background: #232F3D;
+    color: white;
+}
+
+ul.short-news.d-flex.flex-column a:hover .short-news-title {
+    color: white;
+}
+
+ul.short-news.d-flex.flex-column li a {
+    position: relative;
+    justify-content: space-between;
+    background: #1D232C;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.short-news-title {
+    overflow: hidden;
+    color: #a5bbdc;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.short-news-i {
+    height: 100%;
+    width: 35px;
+    background: #232F3D;
+    text-align: center;
+    font-size: 24px;
+    color: #a5bbdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ------------------------------------
 Home page Css
+ ------------------------------------  */
+
+/* ------------------------------------
+Footer page Css
+ ------------------------------------  */
+
+footer {
+    background: #222933;
+    color: #767f89;
+    padding-top: 20px;
+    border-top: 1px solid #313842;
+    border-bottom: 1px solid #313842;
+}
+
+.footer-description {
+    margin-top: 20px;
+}
+
+footer ul li {
+    margin: 4px;
+    float: left;
+}
+
+footer ul li a {
+    display: block;
+    padding: 6px 10px;
+    background: #222933;
+    border: 1px solid #313842;
+    border-radius: 3px;
+    color: #a5bbdc;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+}
+
+footer ul li a:hover {
+    background: #303F52;
+    color: white;
+}
+
+.count {
+    margin-top: 20px;
+}
+
+footer .copyRight  {
+    background: #131A20;
+    padding: 15px 0;
+    margin-top: 0px;
+}
+
+footer .copyRight  a {
+    color: #a5bbdc;
+}
+
+/* ------------------------------------
+Footer page Css
  ------------------------------------  */

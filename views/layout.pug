@@ -14,11 +14,12 @@ html(lang="en")
         link(rel="stylesheet" href="/stylesheets/style.css")
         title= title
     body
-        include includes/navbar.pug 
+        include includes/navbar
         .bg
             .container#table
                 block content
                 block movies
+        include includes/footer
 
 
         //- ----------- Bootstrap Js ---------------

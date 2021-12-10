@@ -6,14 +6,34 @@ $('.owl-random.owl-carousel').owlCarousel({
     margin: 10
 });
 
+$(document).ready(function () {
+    $(".owl-treyler-clone .owl-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        dots: true,
+        nav: true,
+        navText: [$(".owl-treyler-clone .owl-nav .owl-left"), $(".owl-treyler-clone .owl-nav .owl-right")],
+    });
+});
 
 $(document).ready(function () {
-    $(".owl-green .owl-carousel").owlCarousel({
+    $(".owl-green.two .owl-carousel").owlCarousel({
         loop: true,
         items: 4,
         dots: true,
         nav: true,
-        navText: [$(".owl-green .owl-nav .owl-left"), $(".owl-green .owl-nav .owl-right")],
+        navText: [$(".owl-green.two .owl-nav .owl-left"), $(".owl-green.two .owl-nav .owl-right")],
+    });
+});
+
+
+$(document).ready(function () {
+    $(".owl-green.one .owl-carousel").owlCarousel({
+        loop: true,
+        items: 4,
+        dots: true,
+        nav: true,
+        navText: [$(".owl-green.one .owl-nav .owl-left"), $(".owl-green.one .owl-nav .owl-right")],
     });
 });
 
