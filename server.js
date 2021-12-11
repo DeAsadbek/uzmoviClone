@@ -7,6 +7,7 @@ const PORT = 3000;
 
 // routes module exports 
 const index = require("./routes/index");
+const addData = require("./routes/add");
 const serial = require("./routes/serial");
 const treyler = require("./routes/treyler");
 const konsert = require("./routes/konsert");
@@ -35,6 +36,7 @@ app.set("views", path.join(__dirname, "views"));
 
 // routes settings
 app.use(index);
+app.use(addData);
 app.use(serial);
 app.use(treyler);
 app.use(konsert);

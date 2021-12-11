@@ -1,12 +1,13 @@
 //  ---------- Owl-Carousel Code -------------
 
 $('.owl-random.owl-carousel').owlCarousel({
+    loop: false,
     items: 1,
     nav: false,
     margin: 0,
     responsive: {
         1200:{
-            items: 4
+            items: 1
         },
         992: {
             items: 3
@@ -22,7 +23,7 @@ $('.owl-random.owl-carousel').owlCarousel({
 
 $(document).ready(function () {
     $(".owl-treyler-clone .owl-carousel").owlCarousel({
-        loop: true,
+        loop: false,
         items: 1,
         dots: true,
         nav: true,
@@ -32,7 +33,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".owl-green.two .owl-carousel").owlCarousel({
-        loop: true,
+        loop: false,
         items: 4,
         dots: true,
         nav: true,
@@ -43,7 +44,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".owl-green.one .owl-carousel").owlCarousel({
-        loop: true,
+        loop: false,
         items: 4,
         dots: true,
         nav: true,
@@ -53,7 +54,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".owl-blue .owl-carousel").owlCarousel({
-        loop: true,
+        loop: false,
         items: 4,
         dots: true,
         nav: true,
@@ -63,7 +64,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".owl-orange .owl-carousel").owlCarousel({
-        loop: true,
+        loop: false,
         items: 4,
         dots: true,
         nav: true,

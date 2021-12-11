@@ -1,5 +1,58 @@
 extends layout
 block content 
+    .container.slide-one
+        h3.pageMenu premyera
+        .home-Carousel
+            .owl-carousel(style="opacity: 1;")
+                .item 
+                    a(href="/")
+                        img(src="/images/owl5.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
+                        .owl-text 
+                            span Ustomon O'g'rilar armiyasi Talonchilar premyera... 
+                        .owl-play 
+                            i.fas.fa-play-circle
+                .item 
+                    a(href="/")
+                        img(src="/images/owl1.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
+                        .owl-text 
+                            span Lochin ko'z barcha qismlari uzbek tilida...
+                        .owl-play 
+                            i.fas.fa-play-circle
+                .item 
+                    a(href="/")
+                        img(src="/images/owl2.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
+                        .owl-text 
+                            span Yovvoyilar sayyorasi premyera hayvonlar dunyosi...
+                        .owl-play 
+                            i.fas.fa-play-circle
+                .item 
+                    a(href="/")
+                        img(src="/images/owl3.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
+                        .owl-text 
+                            span Arkane afsonalar ligasi uzbek tilida... 
+                        .owl-play 
+                            i.fas.fa-play-circle
+                .item 
+                    a(href="/")
+                        img(src="/images/owl4.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
+                        .owl-text 
+                            span Ustomon O'g'rilar armiyasi Talonchilar premyera... 
+                        .owl-play 
+                            i.fas.fa-play-circle
+                .item 
+                    a(href="/")
+                        img(src="/images/owl6.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
+                        .owl-text 
+                            span U 235 suv osti kemasi premyera... 
+                        .owl-play 
+                            i.fas.fa-play-circle
+            .owl-nav 
+                button 
+                    span.owl-prev 
+                        i.fas.fa-chevron-left
+                button 
+                    span.owl-next
+                        i.fas.fa-chevron-right
     .owl-box.row
         .col-md-9.col-xs-12
             .row
@@ -7,66 +60,16 @@ block content
                     .slides.owl-blue 
                         h3.pageMenu.pageOne TARJIMA KINOLAR     
                         .owl-carousel.owl-theme.box-one
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                                    .film-text 
-                                        h4 Maskarad
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                                    .film-text 
-                                        h4 Maskarad
+                            each db in dataBase
+                                .item 
+                                    .short-images 
+                                        img(src="/images/new.gif" alt="").new
+                                        a(href="/").short-images-link
+                                            img(src=""+db.photo alt="")
+                                        span.film-year 
+                                            a(href="/")= db.year
+                                        .film-text 
+                                            h4= db.name
                         .owl-nav.one
                             button
                                 span.owl-left
@@ -77,66 +80,17 @@ block content
                     .slides.owl-orange 
                         h3.pageMenu.pageTwo O'zbek kinolar
                         .owl-carousel.owl-theme.box-one
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                                    .film-text 
-                                        h4 Maskarad
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                            .item 
-                                .short-images 
-                                    img(src="/images/new.gif" alt="").new
-                                    a(href="/").short-images-link
-                                        img(src="/images/kinolar/film.jpg" alt="")
-                                    span.film-year 
-                                        a(href="/") 2019
-                                    .film-text 
-                                        h4 Maskarad
+                            each db in dataBase
+                                if data.id != db.id
+                                    .item 
+                                        .short-images 
+                                            img(src="/images/new.gif" alt="").new
+                                            a(href="/").short-images-link
+                                                img(src=""+db.photo alt="")
+                                            span.film-year 
+                                                a(href="/")= db.year
+                                            .film-text 
+                                                h4= db.name
                         .owl-nav.one
                             button
                                 span.owl-left
@@ -145,7 +99,7 @@ block content
                                 span.owl-right
                                     i.fal.fa-chevron-right
                     .slides.owl-green.one 
-                        h3.pageMenu.pageThree= page5  
+                        h3.pageMenu.pageThree Hind Kinolari
                         .owl-carousel.owl-theme.box-one
                             .item 
                                 .short-images 
@@ -316,28 +270,28 @@ block content
                                     li
                                         a(href="/").d-flex.align-items-center
                                             .short-news-images 
-                                                img(src="/images/kinolar/film1.jpg", title="kinolar" alt="")
+                                                img(src="/images/kinolar/film1.jpg" title="kinolar" alt="")
                                             .short-news-title kinolar
                                             .short-news-i 
                                                 i.fal.fa-chevron-right
                                     li
                                         a(href="/").d-flex.align-items-center
                                             .short-news-images 
-                                                img(src="/images/kinolar/film1.jpg", title="kinolar" alt="")
+                                                img(src="/images/kinolar/film1.jpg" title="kinolar" alt="")
                                             .short-news-title kinolar
                                             .short-news-i 
                                                 i.fal.fa-chevron-right
                                     li
                                         a(href="/").d-flex.align-items-center
                                             .short-news-images 
-                                                img(src="/images/kinolar/film1.jpg", title="kinolar" alt="")
+                                                img(src="/images/kinolar/film1.jpg" title="kinolar" alt="")
                                             .short-news-title kinolar
                                             .short-news-i 
                                                 i.fal.fa-chevron-right
                                     li
                                         a(href="/").d-flex.align-items-center
                                             .short-news-images 
-                                                img(src="/images/kinolar/film1.jpg", title="kinolar" alt="")
+                                                img(src="/images/kinolar/film1.jpg" title="kinolar" alt="")
                                             .short-news-title kinolar
                                             .short-news-i 
                                                 i.fal.fa-chevron-right

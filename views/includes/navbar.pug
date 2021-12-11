@@ -272,7 +272,7 @@ ul.lightRooms
                             li
                                 a.dropdown-item(href='#') Premyeralar
                             li
-                                a.dropdown-item(href='#') Marvel Kinolari
+                                a.dropdown-item(href='/xSearch/marvel') Marvel Kinolari
                             li
                                 a.dropdown-item(href='#') DC Kinolari
                             li
@@ -355,10 +355,10 @@ ul.lightRooms
                     | Bizga Telegramda qo&apos;shiling!
                 .d-flex
                     .infobar-header#infobar-header
-                        form(action="")
+                        form(action="/search")
                             .mb-3
-                                input(type="text" placeholder="Film izlash").form-control
-                                button.btn.btn-primary Search
+                                input(type="text" placeholder="Film izlash" name="search").form-control
+                                button(name="submit" type="submit").btn.btn-primary Search
                     .infobar-collapse
                         ul.d-flex
                             li.nav-item 
@@ -377,56 +377,3 @@ ul.lightRooms
                                 a(href="#!").nav-link
                                     i.fas.fa-exclamation-circle
                                     span Qoidalar! 
-    .container.slide-one
-        h3.pageMenu premyera
-        .home-Carousel
-            .owl-carousel(style="opacity: 1;")
-                .item 
-                    a(href="/")
-                        img(src="/images/owl5.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
-                        .owl-text 
-                            span Ustomon O'g'rilar armiyasi Talonchilar premyera... 
-                        .owl-play 
-                            i.fas.fa-play-circle
-                .item 
-                    a(href="/")
-                        img(src="/images/owl1.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
-                        .owl-text 
-                            span Lochin ko'z barcha qismlari uzbek tilida...
-                        .owl-play 
-                            i.fas.fa-play-circle
-                .item 
-                    a(href="/")
-                        img(src="/images/owl2.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
-                        .owl-text 
-                            span Yovvoyilar sayyorasi premyera hayvonlar dunyosi...
-                        .owl-play 
-                            i.fas.fa-play-circle
-                .item 
-                    a(href="/")
-                        img(src="/images/owl3.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
-                        .owl-text 
-                            span Arkane afsonalar ligasi uzbek tilida... 
-                        .owl-play 
-                            i.fas.fa-play-circle
-                .item 
-                    a(href="/")
-                        img(src="/images/owl4.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
-                        .owl-text 
-                            span Ustomon O'g'rilar armiyasi Talonchilar premyera... 
-                        .owl-play 
-                            i.fas.fa-play-circle
-                .item 
-                    a(href="/")
-                        img(src="/images/owl6.jpg" alt="Ustomon O'g'rilar armiyasi Talonchilar premyera...")
-                        .owl-text 
-                            span U 235 suv osti kemasi premyera... 
-                        .owl-play 
-                            i.fas.fa-play-circle
-            .owl-nav 
-                button 
-                    span.owl-prev 
-                        i.fas.fa-chevron-left
-                button 
-                    span.owl-next
-                        i.fas.fa-chevron-right

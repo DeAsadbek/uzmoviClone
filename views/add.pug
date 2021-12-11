@@ -1,0 +1,32 @@
+extends layout 
+block content 
+    form(method="POST" enctype="multipart/form-data")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Film nomi:
+            input.form-control(type='text' name="name" placeholder="Film nomi")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Davlati:
+            input.form-control(type='text' name="country" placeholder="Filmm davlati")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Sanasi:
+            input.form-control(type='text' name="year" placeholder="Film chiqqan yili")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Janri:
+            input.form-control(type='text' name="janri" placeholder="Film janri")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Tili:
+            input.form-control(type='text' name="til" placeholder="Film tili")
+        .mb-3
+            select.form-select(aria-label='Default select example' name="category")
+                option(selected='') Tarjima Kinolar
+                option(value='Premyeralar') Premyeralar
+                option(value='Marvel Kinolari') Marvel Kinolari
+                option(value='DC Kinolari') DC Kinolari
+                option(value='X-Men Kinolar') X-Men Kinolar
+                option(value="O'zbek Kinolar") O'zbek Kinolar
+                option(value='Hind Kinolar') Hind Kinolar
+                option(value='Multifilmlar') Multifilmlar
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Film rasm:
+            input.form-control(type='file' name="photo")
+        button.btn.btn-primary(type='submit')= button

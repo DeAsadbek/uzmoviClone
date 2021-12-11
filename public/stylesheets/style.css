@@ -46,10 +46,18 @@ body {
     overflow-x: hidden;
 }
 
-@media (min-width: 1200) {
+@media (min-width: 1200px) {
     .right-bar {
         width: 25% !important;
     }
+
+    .owl-box.row .col-md-9 {
+        width: 75%;
+    }
+    .owl-box.row .col-md-9 {
+        width: 75%;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -87,10 +95,6 @@ body {
         width: 100%;
     }
 
-    .owl-box.row .col-md-9 {
-        width: 100%;
-    }
-
     .owl-random.owl-carousel {
         max-width: 100% !important;
         width: 100% !important;
@@ -113,10 +117,6 @@ body {
 
 @media (min-width: 546px) {
     .right-bar {
-        width: 100%;
-    }
-
-    .owl-box.row .col-md-9 {
         width: 100%;
     }
 
@@ -926,6 +926,7 @@ Home page Css
     height: 100%;
     width: 100%;
     color: #a5bbdc;
+    text-transform: uppercase;
 }
 
 .owl-box .film-text:hover {

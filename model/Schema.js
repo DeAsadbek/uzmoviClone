@@ -7,24 +7,25 @@ const db = new Schema({
         type: String,
         required: true
     },
-    price: {
-        type: String,
-        default: 0
-    },
     category: {
-        type: String,
-        required: true
-    },
-    bio: {
         type: String
     },
+    janri: String,
     photo: String,
-    imdb_score: {
-        type: Number,
-        default: 0
-    },
+    imdb_score: Number,
+    til: String,
     country: String,
-    year: Number
+    year: Number,
+    comments: {
+        view: {
+            type: Number,
+            default: 0
+        },
+        like: {
+            type: Number,
+            default: 0
+        }
+    }
 });
 
 module.exports = mongoose.model("movies", db);
