@@ -1,0 +1,233 @@
+extends layout
+block movies 
+    .moviesSearch 
+        .row
+            .col-md-9.col-xs-12
+                .row 
+                    .col-xs-12
+                        h3.pageMenu.pageSilver
+                            span 
+                                a(href="/")  uzmovi
+                                |  »
+                                a(href="/") tarjima
+                                |  »
+                                | Marvel kino olamiga kiruvchi barcha Filmlar to'plami
+                        h2 Bu yerda reklama buladi
+                        h3.pageMenu.pageOne MARVEL OLAMIGA KIRUVCHI BARCHA KINOLAR
+                        .fstory.margin-b40.block-p
+                            .row 
+                                .col-sm-4.col-xs-12
+                                    .story-foster
+                                        img(src="/images/marvel.jpg" title="MARVEL OLAMIGA KIRUVCHI BARCHA KINOLAR" , alt="")
+                                .col-sm-8.col-xs-12
+                                    .finfo 
+                                        .info-line
+                                        .info-block 
+                                            .info-title
+                                                span Nomi:
+                                            .info-text
+                                                b Marvel kino olamiga kiruvchi barcha Filmlar to'plami
+                                    .finfo
+                                        .info-line
+                                    .finfo 
+                                        .info-line
+                                        .info-block 
+                                            .info-title
+                                                span Janri:
+                                            .info-text
+                                                a(href="/") tarjima 
+                                                    |  /
+                                                a(href="/") sarguzasht 
+                                                    |  /
+                                                a(href="/") fantastika
+                                                    |  /
+                                                a(href="/") news
+                                                    |  / 
+                                    center 
+                                        .info-text 
+                                            ul.d-flex.align-center
+                                                li.reyting-plus 
+                                                    a(href="") 
+                                                        i.fal.fa-thumbs-up
+                                                li
+                                                    span#reyting-layer
+                                                        span.typePlusMinus +10
+                                                li.reyting-minus
+                                                    a(href="") 
+                                                        i.fal.fa-thumbs-down
+            .right-bar.col-md-3.col-xs-12 
+                h3.pageMenu Bizga qo'shiling
+                .links
+                    a(href="/").nav-link
+                        i.fab.fa-telegram-plane
+                    a(href="/").nav-link
+                        i.fab.fa-youtube
+                    a(href="/").nav-link
+                        i.fab.fa-instagram
+                    a(href="/").nav-link
+                        i.fab.fa-twitter
+                .owl-boxTwo.margin-b20
+                    h6.pageMenu.pageOne Tasodifiy kinolar
+                    .owl-random.owl-carousel
+                        .item
+                            img(src="/images/kinolar/film1.jpg" alt="")
+                            h4 
+                                a(href="/") Isyonkor 
+                            small.year-right 2021
+                            small.tas-ix tas-ix
+                        .item
+                            img(src="/images/kinolar/film1.jpg" alt="").hoverClass
+                        .item
+                            img(src="/images/kinolar/film1.jpg" alt="").hoverClass
+                        .item
+                            img(src="/images/kinolar/film1.jpg" alt="").hoverClass
+                        .item
+                            img(src="/images/kinolar/film1.jpg" alt="").hoverClass
+                #accordionExample.accordion
+                    .accordion-item
+                        h2#headingOne.accordion-header
+                            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                                i.far.fa-video
+                                | Filmlar
+                        #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+                            button.w-100.btn.btn-treyler Barchasi Ko'rish
+                            .accordion-body
+                                .story-list-img 
+                                    a(href="/") 
+                                        img(src="/images/kinolar/film3.jpg" title="Uzbek tilida" alt="")
+                                .story-list-content 
+                                    h4.story-list-title 
+                                        a(href="/")  o'g'rilar ovchisi o'g'rilar izidan 
+                                    p.story-list-text 
+                                        a(href="/") tarjima
+                                        a(href="/") jangari
+                                    .info-text 
+                                        ul.d-flex.align-center
+                                            li.reyting-plus 
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-up
+                                            li
+                                                span#reyting-layer
+                                                    span.typePlusMinus +10
+                                            li.reyting-minus
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-down
+                            .accordion-body
+                                .story-list-img 
+                                    a(href="/") 
+                                        img(src="/images/kinolar/film3.jpg" title="Uzbek tilida" alt="")
+                                .story-list-content 
+                                    h4.story-list-title 
+                                        a(href="/")  o'g'rilar ovchisi o'g'rilar izidan 
+                                    p.story-list-text 
+                                        a(href="/") tarjima
+                                        a(href="/") jangari
+                                    .info-text 
+                                        ul.d-flex.align-center
+                                            li.reyting-plus 
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-up
+                                            li
+                                                span#reyting-layer
+                                                    span.typePlusMinus +10
+                                            li.reyting-minus
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-down
+                    .accordion-item
+                        h2#headingTwo.accordion-header
+                            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                                i.fal.fa-thumbs-up
+                                | Reytingi yuqori
+                        #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+                            button.w-100.btn.btn-treyler Barchasi Ko'rish
+                            .accordion-body
+                                .story-list-img 
+                                    a(href="/") 
+                                        img(src="/images/kinolar/film3.jpg" title="Uzbek tilida" alt="")
+                                .story-list-content 
+                                    h4.story-list-title 
+                                        a(href="/")  o'g'rilar ovchisi o'g'rilar izidan 
+                                    p.story-list-text 
+                                        a(href="/") tarjima
+                                        a(href="/") jangari
+                                    .info-text 
+                                        ul.d-flex.align-center
+                                            li.reyting-plus 
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-up
+                                            li
+                                                span#reyting-layer
+                                                    span.typePlusMinus +10
+                                            li.reyting-minus
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-down
+                            .accordion-body
+                                .story-list-img 
+                                    a(href="/") 
+                                        img(src="/images/kinolar/film3.jpg" title="Uzbek tilida" alt="")
+                                .story-list-content 
+                                    h4.story-list-title 
+                                        a(href="/")  o'g'rilar ovchisi o'g'rilar izidan 
+                                    p.story-list-text 
+                                        a(href="/") tarjima
+                                        a(href="/") jangari
+                                    .info-text 
+                                        ul.d-flex.align-center
+                                            li.reyting-plus 
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-up
+                                            li
+                                                span#reyting-layer
+                                                    span.typePlusMinus +10
+                                            li.reyting-minus
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-down
+                    .accordion-item
+                        h2#headingThree.accordion-header
+                            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                                i.fal.fa-eye
+                                | Ko'p ko'rilgan
+                        #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+                            button.w-100.btn.btn-treyler Barchasi Ko'rish
+                            .accordion-body
+                                .story-list-img 
+                                    a(href="/") 
+                                        img(src="/images/kinolar/film3.jpg" title="Uzbek tilida" alt="")
+                                .story-list-content 
+                                    h4.story-list-title 
+                                        a(href="/")  o'g'rilar ovchisi o'g'rilar izidan 
+                                    p.story-list-text 
+                                        a(href="/") tarjima
+                                        a(href="/") jangari
+                                    .info-text 
+                                        ul.d-flex.align-center
+                                            li.reyting-plus 
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-up
+                                            li
+                                                span#reyting-layer
+                                                    span.typePlusMinus +10
+                                            li.reyting-minus
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-down
+                            .accordion-body
+                                .story-list-img 
+                                    a(href="/") 
+                                        img(src="/images/kinolar/film3.jpg" title="Uzbek tilida" alt="")
+                                .story-list-content 
+                                    h4.story-list-title 
+                                        a(href="/")  o'g'rilar ovchisi o'g'rilar izidan 
+                                    p.story-list-text 
+                                        a(href="/") tarjima
+                                        a(href="/") jangari
+                                    .info-text 
+                                        ul.d-flex.align-center
+                                            li.reyting-plus 
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-up
+                                            li
+                                                span#reyting-layer
+                                                    span.typePlusMinus +10
+                                            li.reyting-minus
+                                                a(href="") 
+                                                    i.fal.fa-thumbs-down

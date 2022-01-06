@@ -12,11 +12,21 @@ block content
             input.form-control(type='text' name="year" placeholder="Film chiqqan yili")
         .mb-3
             label.form-label(for='exampleInputEmail1') Janri:
-            input.form-control(type='text' name="janri" placeholder="Film janri")
+            select.form-select(aria-label='Default select example' name="janri")
+                option(selected='Fantastik') Fantastik
+                option(value='Drama') Drama
+                option(value='Jangari') Jangari
+                option(value='Komediya') Komediya
+                option(value='Sarguzasht') Sarguzasht
+                option(value="Qo'rqinchli") Qo'rqinchli
+                option(value='Tarixiy') Tarixiy
+                option(value='Klassika') Klassika
+                option(value='Hayotiy') Hayotiy
         .mb-3
             label.form-label(for='exampleInputEmail1') Tili:
             input.form-control(type='text' name="til" placeholder="Film tili")
         .mb-3
+            label.form-label(for='exampleInputEmail1') Category:
             select.form-select(aria-label='Default select example' name="category")
                 option(selected='') Tarjima Kinolar
                 option(value='Premyeralar') Premyeralar

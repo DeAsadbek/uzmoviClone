@@ -58,7 +58,7 @@ router.get("/xSearch/marvel", (req, res) => {
         if (data == "") {
             res.redirect("/");
         } else {
-            res.render("index", {
+            res.render("movies", {
                 title: "Uzmovi.com Tarjima Kinolar.",
                 dataBase: data,
                 data
