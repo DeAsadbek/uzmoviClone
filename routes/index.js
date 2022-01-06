@@ -44,25 +44,16 @@ router.get("/search", (req, res) => {
 });
 
 router.get("/xSearch/marvel", (req, res) => {
-
-    let {
-        search
-    } = req.query;
-
-    const lowerCase = search;
-    dbSchema.find({
-        category: {
-            $regex: lowerCase
-        }
-    }, (err, data) => {
-        if (data == "") {
-            res.redirect("/");
+    dbSchema.find({}, (err, data) => {
+        if (err) {
+            console.log(err, "Err");
         } else {
             res.render("movies", {
-                title: "Uzmovi.com Tarjima Kinolar.",
-                dataBase: data,
+                title: "Marvel Kinolari",
+                datas: data,
                 data
             });
+            // console.log(data);
         }
     });
 });

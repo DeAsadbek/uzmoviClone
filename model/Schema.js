@@ -25,7 +25,8 @@ const db = new Schema({
             type: Number,
             default: 0
         }
-    }
+    },
+    dirUser: String
 });
 
 module.exports = mongoose.model("movies", db);

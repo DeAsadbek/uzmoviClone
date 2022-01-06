@@ -637,6 +637,10 @@ Home page Css
     margin: -50px 0 0 0;
 }
 
+.home-Carousel .owl-carousel {
+    height: 500px;
+}
+
 .home-Carousel .owl-nav button:last-child {
     position: absolute;
     top: 50%;
@@ -665,6 +669,10 @@ Home page Css
     padding: 8% 0;
     z-index: 15;
     margin-left: 5%;
+}
+
+.home-Carousel .item {
+    height: 500px;
 }
 
 .owl-carousel .item .owl-text span {
@@ -1683,9 +1691,12 @@ Footer page Css
     color: white;
 }
 
-
 .story-foster img{
     border: 3px solid #304156;
     width: 100%;
     height: 100%;
+}
+
+.modal-backdrop {
+    z-index: 80 !important;
 }

@@ -268,21 +268,21 @@ ul.lightRooms
                             span.caret
                         ul.dropdown-menu.open(aria-labelledby='navbarDropdown')
                             li
-                                a.dropdown-item(href='#') Tarjima Kinolar
+                                a.dropdown-item(href='/xSearch/tarjima') Tarjima Kinolar
                             li
-                                a.dropdown-item(href='#') Premyeralar
+                                a.dropdown-item(href='/xSearch/premyera') Premyeralar
                             li
                                 a.dropdown-item(href='/xSearch/marvel') Marvel Kinolari
                             li
-                                a.dropdown-item(href='#') DC Kinolari
+                                a.dropdown-item(href='/xSearch/dcKinolar') DC Kinolari
                             li
-                                a.dropdown-item(href='#') X-Men Kinolar
+                                a.dropdown-item(href='/xSearch/x-men') X-Men Kinolar
                             li
-                                a.dropdown-item(href='#') O'zbek Kinolari
+                                a.dropdown-item(href='/xSearch/uzbek') O'zbek Kinolari
                             li
-                                a.dropdown-item(href='#') Hind Kinolari
+                                a.dropdown-item(href='/xSearch/hind') Hind Kinolari
                             li
-                                a.dropdown-item(href='#') Multfilm
+                                a.dropdown-item(href='/xSearch/multifilm') Multfilm
                     li.nav-item
                         a.nav-link(aria-current='page' href='/serial').nav2 Seriallar 
                     li.nav-item.dropdown
@@ -359,6 +359,56 @@ ul.lightRooms
                             .mb-3
                                 input(type="text" placeholder="Film izlash" name="search").form-control
                                 button(name="submit" type="submit").btn.btn-primary Search
+                    .infobar-account.w-25 
+                        .d-flex.align-items-center
+                            button(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalOne' data-bs-whatever='@mdo').btn.btn-danger Sign In 
+                            button(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal' data-bs-whatever='@mdo').btn.btn-success Sign Up 
+                            #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel.modal-title Sign Up
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        .modal-body
+                                            form(method='POST' action='/login/create')
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Name:
+                                                    input#recipient-name.form-control(type='text' name='name' placeholder="Your name")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Username:
+                                                    input#recipient-name.form-control(type='text' name='username' placeholder="Your username")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Surname:
+                                                    input#recipient-name.form-control(type='text' name='surname' placeholder="Your last name")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Email:
+                                                    input#recipient-name.form-control(type='email' name='email' placeholder="Your email")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Password:
+                                                    input#recipient-name.form-control(type='password' name='password' placeholder="Password")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Conform Password:
+                                                    input#recipient-name.form-control(type='password' name='password' placeholder="Conform password")
+                                                .modal-footer
+                                                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                                                    button.btn.btn-primary(type='submit') Send message
+                            #exampleModalOne.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel.modal-title Sign In
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        .modal-body
+                                            form(method='POST' action="/login/enter")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Username:
+                                                    input#recipient-name.form-control(type='text' name='username' placeholder="Your username")
+                                                .mb-3
+                                                    label.col-form-label(for='recipient-name') Password:
+                                                    input#recipient-name.form-control(type='password' name='password' placeholder="Password")
+                                                .modal-footer
+                                                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                                                    button.btn.btn-primary(type='submit') Send message
                     .infobar-collapse
                         ul.d-flex
                             li.nav-item 

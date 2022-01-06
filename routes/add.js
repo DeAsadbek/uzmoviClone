@@ -19,7 +19,8 @@ router.post("/movies/add", multer, (req, res) => {
         til: req.body.til,
         country: req.body.country,
         year: req.body.year,
-        "comments.view": req.body.view
+        "comments.view": req.body.view,
+        category: req.body.category
     });
 
     db.save((err, data) => {
@@ -28,6 +29,7 @@ router.post("/movies/add", multer, (req, res) => {
         } else {
             res.redirect("/");
             // res.json(data);
+            console.log(data);
         }
     });
 });

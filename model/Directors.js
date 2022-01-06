@@ -6,12 +6,17 @@ const directors = new Schema({
         type: String,
         required: true
     },
+    username: String,
     surname: String,
-    bio: String,
+    email: String,
+    password: {
+        type: String
+    },
     date: {
         type: Date,
         default: Date.now()
     }
+    // photo: String
 });
 
 module.exports = mongoose.model("director", directors);

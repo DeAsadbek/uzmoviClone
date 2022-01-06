@@ -55,6 +55,14 @@ block movies
                                                 li.reyting-minus
                                                     a(href="") 
                                                         i.fal.fa-thumbs-down
+                        .fstoryMovies.text-center 
+                            h3(style="font-size: 24px;") Filmlar!!
+                            br
+                            each md in datas
+                                .text-center 
+                                    span 1.
+                                    a(href="/")= md.name
+                            .text-center
             .right-bar.col-md-3.col-xs-12 
                 h3.pageMenu Bizga qo'shiling
                 .links
